@@ -1,0 +1,32 @@
+
+/* Colours the overscroll area (past the top/bottom of the page) to match the app */
+html {
+  background-color: var(--color-surface);
+  overscroll-behavior-y: none;
+}
+
+#root {
+  max-width: 100%;
+  background-color: var(--color-background);
+  font-family: var(--font-mono), ui-monospace;
+  color: var(--color-foreground);
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  isolation: isolate;
+}
+
+#root::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-color: var(--color-dark-background);
+  opacity: 0.4;
+  mask: url("./assets/topo.svg") center / cover no-repeat;
+}
+
