@@ -12,7 +12,7 @@ import {
 import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from "@/components/ui/card";
 import {projects} from "@/data/projects";
 import hero from "@/assets/photos/4.jpg";
-import d4 from "@/assets/doodles/4.svg?raw";
+import D4 from "@/components/doodles/Doodle4.tsx";
 import snap3 from "@/assets/photos/14.jpg";
 import snap1 from "@/assets/photos/6.jpg";
 import snap2 from "@/assets/photos/7.jpg";
@@ -49,7 +49,7 @@ const Home = () => {
     <div className="w-[90%] xl:w-full max-w-6xl mx-auto py-6 flex flex-col gap-10 text-left">
       <Card className="gap-0 py-0 md:flex-row">
         <div className="flex flex-1 flex-col justify-center gap-4 p-6 sm:p-8">
-          <p className="text-sm text-muted-foreground">Welcome to the <strong>camp</strong>site</p>
+          <p className="text-sm text-muted-foreground">Welcome to the camp<strong>site</strong></p>
           <h1 className="text-3xl sm:text-4xl font-bold">Hey, I'm Kess.</h1>
           <p className="text-sm sm:text-base">
             Pull up a chair and stay a while! I build things for the web.
@@ -63,7 +63,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <PhotoTile src={hero} doodle={d4} className={"aspect-4/3 w-full object-cover md:w-1/2 rounded-none"} />
+        <PhotoTile src={hero} doodle={D4} className={"aspect-4/3 w-full object-cover md:w-1/2 rounded-none"} />
       </Card>
 
       <section className="flex flex-col gap-4">

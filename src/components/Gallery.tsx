@@ -13,8 +13,8 @@ import p12 from "../assets/photos/12.jpg";
 import p13 from "../assets/photos/13.jpg";
 import p14 from "../assets/photos/14.jpg";
 import p15 from "../assets/photos/15.jpg";
-import d4 from "../assets/doodles/4.svg?raw"
-import d15 from "../assets/doodles/15.svg?raw"
+import D4 from "@/components/doodles/Doodle4.tsx"
+import D15 from "@/components/doodles/Doodle15.tsx"
 import type {FC} from "react";
 import PhotoTile from "@/components/PhotoTIle.tsx";
 import type {SourceProps} from "@/types.ts";
@@ -40,7 +40,7 @@ const Gallery = () => (
       <WideLandscape src={p2}/>
       <TwoTallPortrait src={p3}/>
       {/* Rows 3-4 */}
-      <WideLandscape src={p4} doodle={d4} />
+      <WideLandscape src={p4} doodle={D4} />
       <TwoTallPortrait src={p5}/>
       <SmallLandscape src={p6}/>
       <SmallLandscape src={p7}/>
@@ -51,7 +51,7 @@ const Gallery = () => (
       {/* Rows 7-8 */}
       <TwoTallPortrait src={p11}/>
       <Panorama src={p13}/>
-      <TwoTallPortrait src={p15} doodle={d15}/>
+      <TwoTallPortrait src={p15} doodle={D15}/>
       <SmallLandscape src={p12}/>
       <SmallLandscape src={p9}/>
     </div>
