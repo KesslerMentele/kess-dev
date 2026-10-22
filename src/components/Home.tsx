@@ -11,11 +11,11 @@ import {
 } from "@remixicon/react";
 import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from "@/components/ui/card";
 import {projects} from "@/data/projects";
-import hero from "@/assets/photos/4.jpg";
+import hero from "@/assets/photos/4.webp";
 import D4 from "@/components/doodles/Doodle4.tsx";
-import snap3 from "@/assets/photos/14.jpg";
-import snap1 from "@/assets/photos/6.jpg";
-import snap2 from "@/assets/photos/7.jpg";
+import snap3 from "@/assets/photos/14.webp";
+import snap1 from "@/assets/photos/6.webp";
+import snap2 from "@/assets/photos/7.webp";
 import PhotoTile from "@/components/PhotoTIle.tsx";
 
 type IconType =  RemixiconComponentType;
