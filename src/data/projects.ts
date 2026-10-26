@@ -17,7 +17,6 @@ export const projects: Project[] = [
     summary: "A graphical, flowchart based factory planner.",
     status: "summited",
     tags: ["TypeScript", "React"],
-    liveUrl: "https://example.com/",
     sourceUrl: "https://github.com/KesslerMentele/processr",
     featured: true,
   },

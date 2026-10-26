@@ -23,7 +23,7 @@ const Repos = () => {
         </p>
       )}
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {repos.map((repo) => (
+        {repos.filter((repo) => repo.name !== ".github").map((repo) => (
           <Card key={repo.name}>
             <CardHeader>
               <CardTitle className="text-accent font-bold">{repo.name}</CardTitle>
