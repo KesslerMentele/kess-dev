@@ -5,6 +5,9 @@ const Footer = () => {
         <span className="min-w-0 truncate text-body sm:text-center">
           © 2026 Kessler Mentele. All Rights Reserved.
         </span>
+        <span>
+          <a href={"https://www.google.com/maps/place/Diablo+Lake"}>48°42'49"N 121°07'05"W</a>
+        </span>
       </div>
     </footer>
 );
